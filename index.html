@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" href="https://imagetolink.com/ib/m1HwP5AnDv.jpeg" type="image/icon type">
+ <title>Page Blocked</title>
+</head>
+<body>
+ <font style="font-family: Arial;">
+ <div id="mySidenav" class="sidenav">
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <center>
+ <button class="button" onclick="window.location.reload();" onclick="window.location.href='/';" class="btn">
+ <span class="button-content">Re-Fresh</span>
+ </button>
+ <h4 >This page is brought to you by PlingifyPlug and Team 1225 WebsiteBlocker</h4>
+</center>
+ </div>
+ 
+ 
+ <span onclick="openNav()"><div class="headerimg"> <img src="https://imagetolink.com/ib/m1HwP5AnDv.jpeg" alt="Error 404" width="60px" height="60px"></div></span>
+ 
+ 
+ <div id="main">
+ 
+ </div>
+
+<center>
+ <h2 >Page Blocked</h2>
+ <h6>‎</h6>
+ <h4 > Think this is an error or should not be blocked contact your IT Department.</h4>
+ <h6>‎</h6>
+ <h4 >This page is brought to you by PlingifyPlug and Team 1225 WebsiteBlocker</h4>
+
+ <h6 >PlingfiyPlug©</h6>
+ <h6 >Team 1225 WebsiteBlocker©</h6>
+</center>
+</font>
+</body>
+<style>
+
+ /* The side navigation menu */
+.sidenav {
+ height: 100%; /* 100% Full-height */
+ width: 0; /* 0 width - change this with JavaScript */
+ position: fixed; /* Stay in place */
+ z-index: 1; /* Stay on top */
+ top: 0; /* Stay at the top */
+ left: 0;
+ background-color: #ffffff; /* Black*/
+ overflow-x: hidden; /* Disable horizontal scroll */
+ padding-top: 60px; /* Place content 60px from the top */
+ transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+ padding: 8px 8px 8px 32px;
+ text-decoration: none;
+ font-size: 25px;
+ color: #818181;
+ display: block;
+ transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+ color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+ position: absolute;
+ top: 0;
+ right: 25px;
+ font-size: 36px;
+ margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+ transition: margin-left .5s;
+ padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+ .sidenav {padding-top: 15px;}
+ .sidenav a {font-size: 18px;}
+}
+
+.button {
+ position: relative;
+ overflow: hidden;
+ height: 3rem;
+ padding: 0 2rem;
+ border-radius: 1.5rem;
+ background: #3d3a4e;
+ background-size: 400%;
+ color: #fff;
+ border: none;
+}
+
+.button:hover::before {
+ transform: scaleX(1);
+}
+
+.button-content {
+ position: relative;
+ z-index: 1;
+}
+
+.button::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ transform: scaleX(0);
+ transform-origin: 0 50%;
+ width: 100%;
+ height: inherit;
+ border-radius: inherit;
+ background: linear-gradient(
+ 82.3deg,
+ rgb(252, 250, 255) 10.8%,
+ rgb(0, 0, 5) 94.3%
+ );
+ transition: all 0.475s;
+}
+
+.headerimg{
+ border-radius: 10px;
+}
+
+
+</style>
+<script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+ document.getElementById("mySidenav").style.width = "250px";
+ document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+ document.getElementById("mySidenav").style.width = "0";
+ document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+
+<SCRIPT language=JavaScript>
+
+
+
+ 
+ <!-- http://www.spacegun.co.uk -->
+ 
+ var message = "function disabled";
+ 
+ function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+ 
+ if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+ 
+ document.onmousedown = rtclickcheck;
+ 
+ </SCRIPT>
+ 
+ <script language="JavaScript">
+ 
+ window.onload = function () {
+ document.addEventListener("contextmenu", function (e) {
+ e.preventDefault();
+ }, false);
+ document.addEventListener("keydown", function (e) {
+ //document.onkeydown = function(e) {
+ // "I" key
+ if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+ disabledEvent(e);
+ }
+ // "J" key
+ if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+ disabledEvent(e);
+ }
+ // "S" key + macOS
+ if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+ disabledEvent(e);
+ }
+ // "U" key
+ if (e.ctrlKey && e.keyCode == 85) {
+ disabledEvent(e);
+ }
+ // "F12" key
+ if (event.keyCode == 123) {
+ disabledEvent(e);
+ }
+ }, false);
+ function disabledEvent(e) {
+ if (e.stopPropagation) {
+ e.stopPropagation();
+ } else if (window.event) {
+ window.event.cancelBubble = true;
+ }
+ e.preventDefault();
+ return false;
+ }
+ }
+ //edit: removed ";" from last "}" because of javascript error
+ </script>
+
+<script>
+function openNav() {
+ document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+ document.getElementById("mySidenav").style.width = "0";
+}
+</script>
